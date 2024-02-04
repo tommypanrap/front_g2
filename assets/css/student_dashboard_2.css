@@ -38,6 +38,10 @@ div.user-section-title{
     align-items: center;
 }
 
+.add-post{
+    cursor: pointer;
+}
+
 .member-post input.member-post-input{
     width: calc( 100% - 190px);
 }
@@ -53,6 +57,7 @@ div.user-section-title{
 .article-post{
 
     padding-top: 54px;
+    padding-bottom: 54px;
     padding-left: 75px;
     padding-right: 75px;
 
@@ -80,6 +85,8 @@ align-items: center;
 justify-content: space-between;
 
 margin-bottom: 20px;
+
+
 }
 
 .title-info-wrapper{
@@ -89,6 +96,7 @@ margin-bottom: 20px;
 
 .tutor-btn a{
     padding-top: 7px;
+    display: flex;
 }
 
 .tutor-btn a span{
@@ -107,7 +115,7 @@ margin-bottom: 20px;
 }
 
 .rbt-page-banner-wrapper .rbt-banner-image, .bg-gradient-9{
-    background: linear-gradient(270deg, #F8DE22 0%, #45FFCA 100%);
+    /* background: linear-gradient(270deg, #F8DE22 0%, #45FFCA 100%); */
 }
 
 .rbt-avatars.size-lg{
@@ -133,3 +141,9 @@ position: relative;
     left: 0;
     display: none;
 }
+
+.post-content img{
+    max-height: 300px;
+}
+
+
