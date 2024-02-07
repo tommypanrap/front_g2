@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="assets/css/plugins/plyr.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style_add.css">
+    <link rel="stylesheet" href="assets/css/mok/mok_opinion.css">
 
 </head>
 
@@ -75,7 +76,36 @@
 
                                 <li class="not-hamber"><a href=""><img src="./assets/images/bell.png" alt=""></a></li>
                                 <li class="not-hamber"><a href="./g2-cart.html"><img src="./assets/images/cart.png" alt=""></a></li>
-                                <li class="not-hamber"><a href=""><img src="./assets/images/mail.png" alt=""></a></li>    
+                                <li class="not-hamber">
+                                    <a href="" class="button_model feed_back">
+                                        <img src="./assets/images/mail.png" alt="">
+                                    </a>
+                                    <div id="lightbox" class="none"> 
+                                        <form action="">
+                                        <article>
+                                            <div class="article-inner-wrapper">
+                                                <h1>意見回饋</h1>
+                                                <div class="feed-back-row1">
+                                                    <p>暱稱</p>
+                                                    <input type="text" placeholder="哈哈哈" value="" disabled>
+                                                </div>
+                                                <div class="feed-back-row2">
+                                                    <p>帳號</p>
+                                                    <input type="text" placeholder="jay6666666@gmail.com" value="" disabled>
+                                                </div>
+                                                <div class="feed-back-row3">
+                                                    <p>意見回饋</p>
+                                                    <input type="textarea" class="feedback">
+                                                </div>
+                                                <div class="feed-back-button">
+                                                    <button type="button"  class="confirm">確認</button>
+                                                    <button type="button" class="btn_model_close">取消</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </article>
+                                        </form>
+                                </li>    
                                 <li class="with-megamenu has-menu-child-item position-static mainmenu-sub not-hamber">
                                     <a href="./g2-register.html">登入 / 註冊</a>
                                 </li>
@@ -614,6 +644,7 @@
     <script src="assets/js/vendor/plyr.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/mok/mok_opinion.js"></script>
     <script>
                 $(document).ready(function() {
                     console.log($('.scroll-animation.scroll-right-left'))

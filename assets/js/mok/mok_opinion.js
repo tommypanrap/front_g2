@@ -1,5 +1,6 @@
 //連結按鈕的地方
-$(".button_model").on("click",function(){
+$(".button_model").on("click",function(e){
+    e.preventDefault();
     $("#lightbox").removeClass("none");
 });
 
