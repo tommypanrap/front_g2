@@ -1,0 +1,63 @@
+.coach-advertise{
+    display: flex;
+}
+
+.ad-plan-select, .ad-plan{
+    background-color: #f6f0fd;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.ad-plan{
+    margin-left: 15px;
+}
+
+.ad-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ad-plan-row{
+    display: flex;  
+    
+}
+
+.ad-plan-row, .ad-content, .ad-cycle-plan{
+    background-color: #797bef;
+    color:#fff;
+    padding: 10px 10px;
+
+    border-radius: 5px;
+}
+
+.ad-content{
+    margin-top: 10px;
+}
+
+input[type=checkbox]{
+    opacity: 1;
+    position: relative;
+}
+
+.ad-cycle-plan-wrapper{
+    display: flex;
+}
+
+.ad-cycle-plan-wrapper .ad-cycle-plan:not(:first-child){
+    margin-left: 2%;
+}
+
+.ad-cycle-plan{
+    width: 15%;
+    text-align: center;  
+}
+
+.filter-option{
+    font-size: 18px;
+}
+
+.ad-plan-button-row{
+    display: flex;
+    justify-content: space-between;
+}
+
