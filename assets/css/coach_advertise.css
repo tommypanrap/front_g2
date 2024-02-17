@@ -61,3 +61,35 @@ input[type=checkbox]{
     justify-content: space-between;
 }
 
+input[type=radio]{
+    opacity: 1;
+    position: relative;
+    width: 30px;
+}
+
+.ad-plan-inner-select{
+    width: 60px;
+    aspect-ratio: 1;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+.ad-plan-inner-select p{
+    line-height: 60px;
+}
+
+.plan-a{
+    background-color: #fff166;
+}
+.plan-b{
+    background-color: #e3ffa7;
+}
+.tab-content{
+    display: none;
+}
+.plan-a-content{
+    
+}
+.active{
+    display: block;
+}

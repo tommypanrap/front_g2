@@ -44,7 +44,7 @@
     <!-- <link rel="stylesheet" href="../histudy__改過/assets/js/smallnew/student_dashboard.js"> -->
     <!-- <link rel="stylesheet" href="../histudy__replace/assets/js/smallnew/student_dashboard.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/smallnew/student_dashboard.css"> -->
-    <link rel="stylesheet" href="assets/css/student_dashboard.css">
+    <!-- <link rel="stylesheet" href="assets/css/student_dashboard.css"> -->
     <link rel="stylesheet" href="assets/css/student_dashboard_2.css">
     <link rel="stylesheet" href="assets/css/coach_dashboard.css">
     <link rel="stylesheet" href="assets/css/coach_data.css">
@@ -1057,13 +1057,13 @@
                         <div class="col-lg-9">
                             
                             
-                            <div class="coach-content coach-data-content coach-advertise">
+                            <div class="coach-content coacfh-data-content coach-advertise">
                                 <div class="ad-plan-select">
                                     <p class="ad-title">廣告方案設定</p>
-                                    <a href=""><p>方案A</p></a>
-                                    <a href=""><p>方案B</p></a>
+                                    <a href="" class="ad-plan-inner-select plan-a"><p>方案A</p></a>
+                                    <a href="" class="ad-plan-inner-select plan-b"><p>方案B</p></a>
                                 </div>
-                                <div class="ad-plan">
+                                <div class="ad-plan tab-content plan-a-content active">
                                     <form action="">
                                     <!-- 這邊模板有寫了js 所以網頁上看到的select結構不會長這樣，還沒解決 -->
                                     <select name="" id="">
@@ -1083,12 +1083,50 @@
                                     <div class="ad-cycle">
                                         <p>適用廣告生效周期和定價:</p>
                                         <div class="ad-cycle-plan-wrapper">
-                                            <div class="ad-cycle-plan"><input type="radio" name="" id=""><p>兩周</p><p>$500</p></div>
-                                            <div class="ad-cycle-plan"><input type="radio" name="" id=""><p>一個月</p><p>$850</p></div>
-                                            <div class="ad-cycle-plan"><input type="radio" name="" id=""><p>三個月</p><p>$2,000</p></div>
-                                            <div class="ad-cycle-plan"><input type="radio" name="" id=""><p>六個月</p><p>$3,800</p></div>
-                                            <div class="ad-cycle-plan"><input type="radio" name="" id=""><p>一年</p><p>$7,500</p></div>
-                                            <div class="ad-cycle-plan"><input type="radio" name="" id=""><p>兩年</p><p>$14,000</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>兩周</p><p>$500</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>一個月</p><p>$850</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>三個月</p><p>$2,000</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>六個月</p><p>$3,800</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>一年</p><p>$7,500</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>兩年</p><p>$14,000</p></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ad-plan-button-row">
+                                        <input type="file" name="" id="">
+
+                                        <button>設定完成</button>
+                                    </div>
+
+                                    </form>
+                                </div>
+
+                                <div class="ad-plan tab-content plan-b-content">
+                                    <form action="">
+                                    <!-- 這邊模板有寫了js 所以網頁上看到的select結構不會長這樣，還沒解決 -->
+                                    <select name="" id="">
+                                        <option value="">課程1</option>
+                                        <option value="">課程2</option>
+                                    </select>
+
+                                    <div class="ad-plan-row">
+                                        <p>廣告方案B: 站方推薦</p>
+                                        <p>方案適用日期:  YYYYMMDD ~ YYYYMMDD</p>
+                                    </div>
+
+                                    <div class="ad-content">
+                                        <p>此方案可使您想投放的課程縮圖，出現在網站首頁側邊的圖片式輪換廣告，增加您的課程曝光度，以達到增加您的課程銷量的目標 !</p>
+                                    </div>
+
+                                    <div class="ad-cycle">
+                                        <p>適用廣告生效周期和定價:</p>
+                                        <div class="ad-cycle-plan-wrapper">
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>兩周</p><p>$500</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>一個月</p><p>$850</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>三個月</p><p>$2,000</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>六個月</p><p>$3,800</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>一年</p><p>$7,500</p></div>
+                                            <div class="ad-cycle-plan"><input type="radio" name="period" id=""><p>兩年</p><p>$14,000</p></div>
                                         </div>
                                     </div>
 
@@ -1101,6 +1139,8 @@
                                     </form>
                                 </div>
                             </div>
+
+                            
                            
 
                         </div>
@@ -1167,6 +1207,7 @@
     <script src="assets/js/vendor/plyr.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/coach_advertise.js"></script>
 </body>
 
 </html>
