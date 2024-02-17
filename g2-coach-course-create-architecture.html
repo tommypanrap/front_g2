@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Student Dashboard - Online Courses & Education Bootstrap5 Template</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- 加入tinymce做貼文發布文字欄 -->
+    <script src="./tinymce_6.8.2/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+          selector: '#mytextarea',
+          plugins: "autoresize"
+
+        });
+        </script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/plugins/sal.css">
+    <link rel="stylesheet" href="assets/css/plugins/feather.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/euclid-circulara.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnify.css">
+    <link rel="stylesheet" href="assets/css/plugins/odometer.css">
+    <link rel="stylesheet" href="assets/css/plugins/animation.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnigy-popup.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plyr.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_add.css">
+    <!-- <link rel="stylesheet" href="../histudy__改過/assets/js/smallnew/student_dashboard.js"> -->
+    <!-- <link rel="stylesheet" href="../histudy__replace/assets/js/smallnew/student_dashboard.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/smallnew/student_dashboard.css"> -->
+    <link rel="stylesheet" href="assets/css/student_dashboard.css">
+    <link rel="stylesheet" href="assets/css/student_dashboard_2.css">
+    <link rel="stylesheet" href="assets/css/coach_dashboard.css">
+    <link rel="stylesheet" href="assets/css/coach_course_create_want.css">
+
+</head>
+
+<body>
+    <!-- Start Header Area -->
+    <header class="rbt-header rbt-header-10">
+        <div class="rbt-sticky-placeholder"></div>
+        <div class="rbt-header-wrapper header-space-betwween header-transparent header-sticky">
+            <div class="container-fluid">
+                <div class="mainbar-row rbt-navigation-start align-items-center">
+                    <div class="header-left rbt-header-content">
+                        <div class="header-info">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/fitanywherelogo.png" alt="Education Logo Images">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rbt-main-navigation d-none d-xl-block">
+                        <nav class="mainmenu-nav">
+                            <ul class="mainmenu">
+                                <li class="with-megamenu has-menu-child-item position-static mainmenu-sub not-hamber">
+                                    <a href="#">TDEE / FFMI計算公式</a>
+                                </li>
+
+                                <li class="with-megamenu has-menu-child-item mainmenu-sub not-hamber">
+                                    <a href="./g2-blog-list.html">討論區</a>
+                                </li>
+
+                                <li class="has-dropdown has-menu-child-item mainmenu-sub not-hamber">
+                                    <a href="./student-dashboard.html">會員中心</a>
+                                </li>
+
+                                <li class="with-megamenu has-menu-child-item position-static mainmenu-sub not-hamber">
+                                    <a href="./g2-02-course-school.html">線上課程<i class="feather-chevron-down"></i></a>
+                                </li>
+
+                                <li class="not-hamber"><a href=""><img src="./assets/images/bell.png" alt=""></a></li>
+                                <li class="not-hamber"><a href="./g2-cart.html"><img src="./assets/images/cart.png" alt=""></a></li>
+                                <li class="not-hamber"><a href=""><img src="./assets/images/mail.png" alt=""></a></li>    
+                                <li class="with-megamenu has-menu-child-item position-static mainmenu-sub not-hamber">
+                                    <a href="./g2-register.html">登入 / 註冊</a>
+                                </li>
+                                <li class="hamber">
+                                    <div class="hamberger">
+                                        <button class="hamberger-button rbt-round-btn">
+                                            <i class="feather-menu"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                                             
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Start Side Vav -->
+    <div class="rbt-cart-side-menu">
+        <div class="inner-wrapper">
+            <div class="inner-top">
+                <div class="content">
+                    <div class="title">
+                        <h4 class="title mb--0">Your shopping cart</h4>
+                    </div>
+                    <div class="rbt-btn-close" id="btn_sideNavClose">
+                        <button class="minicart-close-button rbt-round-btn"><i class="feather-x"></i></button>
+                    </div>
+                </div>
+            </div>
+            <nav class="side-nav w-100">
+                <ul class="rbt-minicart-wrapper">
+                    <li class="minicart-item">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="assets/images/product/1.jpg" alt="Product Images">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h6 class="title"><a href="single-product.html">Miracle Morning</a></h6>
+
+                            <span class="quantity">1 * <span class="price">$22</span></span>
+                        </div>
+                        <div class="close-btn">
+                            <button class="rbt-round-btn"><i class="feather-x"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="minicart-item">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="assets/images/product/7.jpg" alt="Product Images">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h6 class="title"><a href="single-product.html">Happy Strong</a></h6>
+
+                            <span class="quantity">1 * <span class="price">$30</span></span>
+                        </div>
+                        <div class="close-btn">
+                            <button class="rbt-round-btn"><i class="feather-x"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="minicart-item">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="assets/images/product/3.jpg" alt="Product Images">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h6 class="title"><a href="single-product.html">Rich Dad Poor Dad</a></h6>
+
+                            <span class="quantity">1 * <span class="price">$50</span></span>
+                        </div>
+                        <div class="close-btn">
+                            <button class="rbt-round-btn"><i class="feather-x"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="minicart-item">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="assets/images/product/4.jpg" alt="Product Images">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <h6 class="title"><a href="single-product.html">Momentum Theorem</a></h6>
+
+                            <span class="quantity">1 * <span class="price">$50</span></span>
+                        </div>
+                        <div class="close-btn">
+                            <button class="rbt-round-btn"><i class="feather-x"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="rbt-minicart-footer">
+                <hr class="mb--0">
+                <div class="rbt-cart-subttotal">
+                    <p class="subtotal"><strong>Subtotal:</strong></p>
+                    <p class="price">$121</p>
+                </div>
+                <hr class="mb--0">
+                <div class="rbt-minicart-bottom mt--20">
+                    <div class="view-cart-btn">
+                        <a class="rbt-btn btn-border icon-hover w-100 text-center" href="#">
+                            <span class="btn-text">View Cart</span>
+                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="checkout-btn mt--20">
+                        <a class="rbt-btn btn-gradient icon-hover w-100 text-center" href="#">
+                            <span class="btn-text">Checkout</span>
+                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Side Vav -->
+    <a class="close_side_menu" href="javascript:void(0);"></a>
+    <div class="rbt-page-banner-wrapper">
+        <!-- Start Banner BG Image  -->
+        <div class="rbt-banner-image"></div>
+        <!-- End Banner BG Image  -->
+    </div>
+    <!-- 內容 -->
+    <div class="rbt-dashboard-area rbt-section-overlayping-top rbt-section-gapBottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+
+                    <div class="row g-5">
+                        <div class="col-lg-3">
+                            <!-- Start Dashboard Sidebar  -->
+                            
+                            <div class="rbt-default-sidebar sticky-top rbt-shadow-box rbt-gradient-border">
+                                <div class="thumbnail rbt-avatars size-lg">
+                                    <img src="assets/images/member.png" alt="Instructor"  style="position: relative;">
+                                    <div class="Emoji">
+                                        <img src="./assets/images/emoji.png" alt="mood-Emoji" style="height: 4rem; width: 4rem; position: absolute; right: 0; bottom: 0.5rem"> 
+                                        
+                                    </div>
+                                </div>
+                                <!-- 側邊欄 -->
+                                <div class="inner">
+                                    <div class="content-item-content">
+
+                                        <div class="rbt-default-sidebar-wrapper">
+                                            <div class="section-title mb--20">
+                                                <h6 class="rbt-title-style-2">Welcome, Mok </h6>
+                                            </div>
+                                            <nav class="mainmenu-nav">
+                                                <ul class="dashboard-mainmenu rbt-default-sidebar-list">
+                                                    <li><a href="student-dashboard.html"><i
+                                                                class="feather-home"></i><span>教練基本資料</span></a></li>
+                                                    <li><a href="student-news.html"><i
+                                                                class="feather-shopping-bag"></i><span>金流</span></a>
+                                                    </li>
+                                                    <li><a href="student-profile.html"><i
+                                                                class="feather-user"></i><span>課程管理</span></a></li>
+                                                    <li><a href="student-enrolled-courses.html"><i
+                                                                class="feather-book-open"></i><span>數據一覽</span></a></li>
+                                                    <li><a href="student-wishlist.html"><i
+                                                                class="feather-bookmark"></i><span>廣告投放</span></a></li>
+                                                    <li><a href="student-reviews.html"><i
+                                                                class="feather-star"></i><span>自訂快捷區</span></a></li>
+                                                    <li><div class="tutor-btn">
+                                                        <a class="rbt-btn btn-md hover-icon-reverse" href="#">
+                                                            <span class="icon-reverse-wrapper">
+                                                                <span class="btn-text">學員模式</span>
+                                                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Dashboard Sidebar  -->
+                        </div>
+
+                        <div class="col-lg-9">
+                            
+                            <!-- 右邊內容 -->
+                            <!-- <form action=""> -->
+                            <div class="coach-course-manager coach-content coach-create">
+                                <ul class="coach-create-progress">
+                                    <li class="">目標學習者</li>
+                                    <li class="active">課程架構</li>
+                                    <li>課程登陸頁面</li>
+                                    <li>課程表</li>
+                                    <li>課程訊息</li>
+                                    <li>提交前預覽</li>
+                                    <li>完成</li>
+                                </ul>
+                                
+                                <div class="coach-create-architecture">
+                                    <p>您的心中蘊藏著一個課程。將它規劃成形吧！
+                                        仔細規劃您的課程，可為學生創造一條清晰的學習途徑，且在您開始錄製時亦能帶來幫助。請仔細考量每個講座的細節，包括您將要教授的技能、估計的影片長度、要納入的練習活動，以及建立簡介和總結的方式。</p>
+                                
+                                        <p>提示
+                                            從您的目標開始
+                                            在一開始即設定學習者將會在您課程中達成的目標 (亦稱為學習目標) 將可協助您決定課程包含的內容和您的上課方式，以協助您的學習者達成目標。
+                                            建立大綱。
+                                            決定您將教授的技能以及教授的方式為何。將相關的講座分成章節。每個章節應該最少要有 3 個講座，並包括至少一個作業或練習活動。瞭解更多。
+                                            自我介紹，創造動力。
+                                            網路上的人們都想迅速開始學習。製作一個簡介章節，在最初的 10 分鐘內就讓學習者感到充滿期待。
+                                            章節有清楚的學習目標。
+                                            介紹每個章節，描述章節的目標以及其重要的原因。講座與章節的標題應能反映其內容並具有邏輯。
+                                            講座涵蓋一個概念。
+                                            一個好的講座的長度為 2 至 7 分鐘，以讓學生保有興趣並協助他們在短時間內學習。在每個講座中談論到單一個主題，以讓學習者之後能夠輕鬆找它們到並重新觀看。
+                                            混合搭配您的講座類型。
+                                            交替拍攝您自己、您的螢幕、投影片或其他視覺資料。讓您自己出現在畫面中，有助讓學習者覺得自己與您較為親近。
+                                            練習活動可供在實際操作中學習。
+                                            透過專案、作業、編碼練習或練習題協助學習者將您的課程應用到他們的真實世界中。
+                                            要求
+                                            請參閱課程品質要求的完整清單
+                                            您的課程至少必須要有五個講座
+                                            所有講座相加後的總影片長度至少必須超過 30 分鐘
+                                            您的課程是由寶貴的教育內容所組成，並且不包含宣傳或讓人分心的材料</p>
+                                    </div>
+                                    <button>下一步</button>
+                            </div>  
+                            <!-- </form> -->
+
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+    <div class="copyright-area copyright-style-1 ptb--20 bg-color-darker g2_footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <p class="rbt-link-hover text-center color-white-off">Fit AnyWhere© </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer aera -->
+    <div class="rbt-progress-parent">
+        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <!-- JS
+============================================ -->
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <!-- sal.js -->
+    <script src="assets/js/vendor/sal.js"></script>
+    <script src="assets/js/vendor/swiper.js"></script>
+    <script src="assets/js/vendor/magnify.min.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/odometer.js"></script>
+    <script src="assets/js/vendor/backtotop.js"></script>
+    <script src="assets/js/vendor/isotop.js"></script>
+    <script src="assets/js/vendor/imageloaded.js"></script>
+
+    <script src="assets/js/vendor/wow.js"></script>
+    <script src="assets/js/vendor/waypoint.min.js"></script>
+    <script src="assets/js/vendor/easypie.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <script src="assets/js/vendor/bootstrap-select.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.js"></script>
+    <script src="assets/js/vendor/magnify-popup.min.js"></script>
+    <script src="assets/js/vendor/paralax-scroll.js"></script>
+    <script src="assets/js/vendor/paralax.min.js"></script>
+    <script src="assets/js/vendor/countdown.js"></script>
+    <script src="assets/js/vendor/plyr.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
