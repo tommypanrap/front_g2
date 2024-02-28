@@ -31,3 +31,14 @@
 
 
 
+.rbt-card.card-list{
+    max-height: 250px;
+}
+
+.row{
+    overflow: hidden;
+}
+
+.row:not(:nth-child(1)){
+    margin-top: 20px;
+}
