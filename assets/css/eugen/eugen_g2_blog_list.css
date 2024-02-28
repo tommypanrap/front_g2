@@ -64,7 +64,13 @@ a.transparent-button-time {
   /* ===================== */
   /* 新增文章 */
 
-  
+  .rbt-banner-content-inner-container{
+    background-color: #fff;
+    max-width: 90%;
+    margin: 0 auto;
+
+    padding: 20px 30px;
+  }
 
 
   /* =================== */
